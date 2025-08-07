@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SYNERGY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: ;
+      color: #000;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .highlight {
+      background-color: #ffe;
+      padding: 20px;
+      border-left: 5px solid #f9c72c;
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f9c72c;
+    }
+    .form-section {
+      margin-top: 20px;
+      background-color: #fdf6e3;
+      color: #333;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    input, select, button {
+      padding: 8px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Synergy Program</h1>
+  <p>Ensures clean, reliable, and industrialized energy for all the communities in the Philippines</p>
+</header>
+
+<nav>
+  <a href="#about">Energy Resources</a>
+  <a href="#problems">Problems</a>
+  <a href="#solutions">Recommendations</a>
+  <a href="#contact">About Us</a>
+</nav>
+
+<div class="container">
+  <section id="about">
+    <h2>What is Energy Resources?</h2>
+    <div class="highlight">
+      <p>Energy resources refer to the materials or processes that can be used to generate power. They can be renewable, such as solar, wind, and hydropower, or non-renewable, like coal, oil, and natural gas. Renewable energy resources are considered more sustainable since they are replenished naturally over time. Non-renewable resources, on the other hand, are finite and can lead to environmental harm when depleted. The use of energy resources is crucial for economic development, but it also raises concerns about environmental impact and the need for alternative energy solutions.</p>
+    </div>
+  </section>
+  
+<div class="container">
+ <section id="about">
+   <h2>Why is Energy Resources important?</h2>
+   <div class="highlight">
+     <p>Energy resources are important because they power our homes, schools, and transportation. They also support economic growth by fueling industries and businesses. Hospitals and health services also rely on energy for equipment and to store medicines safely. Renewable energy can also reduce pollution and fight climate change. A reliable energy supply improves safety and a better sustainable future for everyone.</p>
+    </div>
+  </section>
+
+  <section id="problems">
+    <h2>Problems in Achieving Clean Energy</h2>
+    <ul>
+      <li>Many remote areas still lack access to reliable electricity.</li>
+      <li>Overdependence on fossil fuels causes high carbon emissions.</li>
+      <li>High initial costs of renewable energy systems.</li>
+      <li>Lack of awareness and government support in some regions.</li>
+    </ul>
+  </section>
+
+  <section id="solutions">
+    <h2>Clean Energy Recommendations</h2>
+    <ul>
+      <li>CRISP (Community Reliable Integrated Solar Power)
+      <li>Piso-Electric (Piezoelectric Energy Harvester)</li>
+      <li>Commercial Steam-Heat Collector</li>
+      <li>Household Biogas Project</li>
+      <li>Energy Education Program</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>About Us</h2>
+    <p>SYNERGY is a youth-led initiative advocating for clean and sustainable energy in the Philippines. Our mission is to promote and encourage communities to practice and develop a systematic and clean way of harnessing energy.</p>
+  </section>
+
+  <section id="tracker">
+    <h2>Philippine Areas & Energy Problems Tracker</h2>
+    <p>The table lets you add and track specific areas in the Philippines and their related energy problems and resources:</p>
+
+    <div class="form-section">
+      <input type="text" id="area" placeholder="Area (e.g. Palawan)" required />
+      <input type="text" id="problem" placeholder="Problem (e.g. Limited electricity)" required />
+      <input type="text" id="resource" placeholder="Energy Resource (e.g. Solar)" required />
+      <button onclick="addRow()">Add Entry</button>
+    </div>
+
+    <table id="energyTable">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Problem</th>
+          <th>Specific Energy Resource</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Palawan</td>
+          <td>Limited electricity in rural barangays</td>
+          <td>Solar</td>
+        </tr>
+        <tr>
+          <td>Samar</td>
+          <td>Unstable power supply during storms</td>
+          <td>Wind-Solar Hybrid</td>
+        </tr>
+        <tr>
+          <td>Mindoro</td>
+          <td>Dependence on diesel generators</td>
+          <td>Biomass</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="thanks">
+    <h2>Special Thanks</h2>
+    <p>We would like to thank the Department of Energy (DOE), the Department of Environment and Natural Resources (DENR), our research members and contributors. individuals, communities, and organizations committed to advancing and addressing clean and sustainable energy across the country. 	 
+    
+    We would also like to thank a student from ACSHS Pampanga for lending us his website format.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 SYNERGY | Sustainable Yielding Natural Energy</p>
+</footer>
+
+<script>
+  function addRow() {
+    const area = document.getElementById("area").value.trim();
+    const problem = document.getElementById("problem").value.trim();
+    const resource = document.getElementById("resource").value.trim();
+
+    if (area === "" || problem === "" || resource === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const table = document.getElementById("energyTable").getElementsByTagName("tbody")[0];
+    const newRow = table.insertRow();
+
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+    const cell3 = newRow.insertCell(2);
+
+    cell1.innerHTML = area;
+    cell2.innerHTML = problem;
+    cell3.innerHTML = resource;
+
+    document.getElementById("area").value = "";
+    document.getElementById("problem").value = "";
+    document.getElementById("resource").value = "";
+  }
+</script>
+
+</body>
+</html>
